@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "hansolrag"
+version = "0.1.0"
+description = "RAG approach used in Hansol Deco Challenge 2024"
+authors = ["Bibek K C <bibekyess@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
