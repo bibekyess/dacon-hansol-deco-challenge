@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hansolrag"
-version = "0.1.1"
+version = "0.1.2"
 description = "RAG approach used in Hansol Deco Challenge 2024"
 authors = ["Bibek K C <bibekyess@gmail.com>"]
 readme = "README.md"
@@ -10,7 +10,7 @@ python = "^3.9"
 llama-index = "^0.10.20"
 llama-index-core = "^0.10.20.post2"
 llama-index-readers-file = "^0.1.11"
-llama-index-embeddings-huggingface = "^0.1.4"
+llama-index-embeddings-huggingface = "0.1.4"
 llama-index-postprocessor-flag-embedding-reranker = "^0.1.2"
 flagembedding = {git = "https://github.com/FlagOpen/FlagEmbedding.git"}
 peft = "^0.9.0"

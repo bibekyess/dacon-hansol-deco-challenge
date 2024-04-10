@@ -11,6 +11,8 @@ RAG Approach used to participate in Dacon Hansol Deco Challenge 2024. Please ref
 conda create -n hansolrag-env python=3.9
 conda activate hansolrag-env
 pip install git+https://github.com/bibekyess/dacon-hansol-deco-challenge.git
+git clone https://github.com/bibekyess/dacon-hansol-deco-challenge.git
+cd dacon-hansol-deco-challenge
 ```
 
 ### Inference

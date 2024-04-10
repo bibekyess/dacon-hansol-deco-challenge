@@ -46,7 +46,6 @@ class Generator(BaseModel):
 
     def get_generative_model(self, mode: str, model_id: str, quantized: str):
         if mode == "gpu-solar":
-            quantized = quantized.lower() == 'true'
             if quantized:
                 bnb_config = BitsAndBytesConfig(
                     load_in_4bit=True,

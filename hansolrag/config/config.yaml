@@ -1,12 +1,12 @@
 generation-model:
-#   - name: cpu-gpt2
-#     model_id: 'skt/kogpt2-base-v2'
-#     tokenizer_config:
-#       bos_token: '</s>'
-#       eos_token: '</s>'
-#       unk_token: '<unk>'
-#       pad_token: '<pad>'
-#       mask_token: '<mask>'
+  - name: cpu-gpt2
+    model_id: 'skt/kogpt2-base-v2'
+    tokenizer_config:
+      bos_token: '</s>'
+      eos_token: '</s>'
+      unk_token: '<unk>'
+      pad_token: '<pad>'
+      mask_token: '<mask>'
 
   # - name: gpu-solar
   #   model_id: 'bibekyess/solar-checkpoint-2000'
@@ -14,8 +14,8 @@ generation-model:
   #   tokenizer_config:
   #     eos_token: '###'
 
-  - name: cpu-gemini
-    model_id: 'hansolrag/model_checkpoints/gemma/gemma-2b-it.gguf'
+  # - name: cpu-gemini
+  #   model_id: 'hansolrag/model_checkpoints/gemma/gemma-2b-it.gguf'
 
 generation-config:
     min_new_tokens: 20
