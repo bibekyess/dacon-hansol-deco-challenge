@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hansolrag"
-version = "0.1.2"
+version = "0.1.2.post1"
 description = "RAG approach used in Hansol Deco Challenge 2024"
 authors = ["Bibek K C <bibekyess@gmail.com>"]
 readme = "README.md"
