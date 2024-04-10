@@ -22,3 +22,12 @@ def save_submission_format(responses, submission_file_name="./deliverable/fun_su
     sub = pd.concat([total_submission, submission] , axis = 1)
 
     sub.to_csv(submission_file_name, index = False) #Rename
+
+
+def load_test_file(file_name):
+    """
+    Get the query list
+    """
+    test = pd.read_csv(file_name)
+    return test.질문
+
