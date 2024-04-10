@@ -8,7 +8,9 @@ RAG Approach used to participate in Dacon Hansol Deco Challenge 2024. Please ref
 
 ### Installation
 ```shell
-pip install hansolrag
+conda create -n hansolrag-env python=3.9
+conda activate hansolrag-env
+pip install git+https://github.com/bibekyess/dacon-hansol-deco-challenge.git
 ```
 
 ### Inference
