@@ -1,0 +1,37 @@
+generation-model:
+#   - name: cpu-gpt2
+#     model_id: 'skt/kogpt2-base-v2'
+#     tokenizer_config:
+#       bos_token: '</s>'
+#       eos_token: '</s>'
+#       unk_token: '<unk>'
+#       pad_token: '<pad>'
+#       mask_token: '<mask>'
+
+  # - name: gpu-solar
+  #   model_id: 'bibekyess/solar-checkpoint-2000'
+  #   quantized: True
+  #   tokenizer_config:
+  #     eos_token: '###'
+
+  - name: cpu-gemini
+    model_id: 'hansolrag/model_checkpoints/gemma/gemma-2b-it.gguf'
+
+generation-config:
+    min_new_tokens: 20
+    max_new_tokens: 256
+    top_p: 0.98
+    top_k: 50
+    temperature: 0.9
+    return_full_text: False
+
+retriever:
+    type: "naive" # Only naive retriever is supported as of now
+    index_dir: "hansolrag/index/train-vector-index-storage-chunk-size-1295"
+    model_name: "BAAI/bge-m3"
+    pooling: "mean"
+    top_k: 5
+
+reranker:
+    model_name: "Dongjin-kr/ko-reranker"
+    top_n: 3
